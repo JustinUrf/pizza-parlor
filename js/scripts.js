@@ -48,20 +48,28 @@ pizzaPrice = function(size, meatArray, veggieArray) {
   price += (meatArray.length * 3);
   price += (veggieArray.length * 2);
   
-  return "$" + price
-}
+  return "$" + price;
+};
+
+Pizza.prototype.pizzaInfo = function() {
+  return this.size + " " + this.price;
+};
 
 function Pizza(size, meatArray, veggieArray, price) {
   this.size = size;
   this.meatArray = meatArray;
   this.veggieArray = veggieArray;
   this.price = price;
-}
+};
+
+
 
 
 let pizzaParlor = new PizzaParlor();
 
-let pizza = new Pizza("large", ["sausage", "pepperoni", "bacon", "chicken"], ["mushroom"])
+let pizza = new Pizza("Large", ["sausage", "pepperoni", "bacon", "chicken"], ["mushroom"])
 
 console.log(pizza)
 console.log(pizzaPrice("Large", ["sausage", "pepperoni", "bacon", "chicken"], ["mushroom"]))
+
+console.log(pizza.pizzaInfo());

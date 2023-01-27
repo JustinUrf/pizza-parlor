@@ -108,3 +108,11 @@ Code: pizzaPrice("Large", ["sausage", "pepperoni", "bacon", "chicken"], ["mushro
 
 Expected output : 21, As large is 7$, there are 4 meat toppings (4x3)
 and one veggie topping (1x2);
+
+## Describe : function pizzaInfo () {}
+
+Test: It should return the size of a pizza and the dollar price
+
+Code: pizza.pizzaInfo();
+
+Expected Output large, and 21.
