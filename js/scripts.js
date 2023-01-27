@@ -62,14 +62,11 @@ function Pizza(size, meatArray, veggieArray, price) {
   this.price = price;
 };
 
+// let pizzaParlor = new PizzaParlor();
 
+// let pizza = new Pizza("Large", ["sausage", "pepperoni", "bacon", "chicken"], ["mushroom"])
 
+// console.log(pizza)
+// console.log(pizzaPrice("Large", ["sausage", "pepperoni", "bacon", "chicken"], ["mushroom"]))
 
-let pizzaParlor = new PizzaParlor();
-
-let pizza = new Pizza("Large", ["sausage", "pepperoni", "bacon", "chicken"], ["mushroom"])
-
-console.log(pizza)
-console.log(pizzaPrice("Large", ["sausage", "pepperoni", "bacon", "chicken"], ["mushroom"]))
-
-console.log(pizza.pizzaInfo());
+// console.log(pizza.pizzaInfo());
