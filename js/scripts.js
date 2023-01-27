@@ -3,7 +3,20 @@ function PizzaParlor() {
   this.currentId = 0;
 };
 
-pizzaParlor = new PizzaParlor();
+PizzaParlor.prototype.addPizza = function(pizza) {
+  this.pizzas = pizza
+};
 
-console.log(pizzaParlor)
-console.log(pizzaParlor.currentId)
+
+PizzaParlor.prototype.assignId = function () {
+  this.currentId += 1;
+  return this.currentId;
+}
+
+
+let pizzaParlor = new PizzaParlor();
+let emptyPizza = "nothing"
+pizzaParlor.addPizza(emptyPizza)
+
+
+console.log(pizzaParlor);

@@ -32,14 +32,48 @@ MIT
 
 Copyright (c) 01/27/23
 
-## Test Driven Development
+# Test Driven Development
 
-Describe: function PizzaParlor() {}
-Test: It is a constructor that should contain a Pizzas{} as an object and a currentId counter that increments with the passing of more pizza's.
+## Describe: function PizzaParlor() {}
+
+Test: It is a constructor that should contain a Pizzas{} as an object and a currentId counter that increments with the passing of more 
+pizza's.
+
 Code : pizzaParlor = new PizzaParlor();
-console.log(pizzaParlor);
-console.log(pizzaParlor.currentId)
+
 Expected Output : >pizzaParlor {
+
   this.pizzas = {}
+
   this.currentId = 0;
+
 }
+
+## Describe: PizzaParlor.prototype.addPizza = function(pizza) {
+  this.pizzas = pizza;
+}
+
+Test: it should add a pizza to the Pizza parlor
+
+Code: pizzaParlor.addPizza(newPizza1);
+
+Expected Output: > pizzaParlor {
+  this.pizzas = {newPizza1,}
+}
+
+
+## Describe: PizzaParlor.prototype.assignId, function();
+
+Test: It should iterate the pizzaParlor's Id by 1 and return its current id.
+
+code : Address
+
+Expected Output : 1,
+
+
+
+
+
+
+
+
