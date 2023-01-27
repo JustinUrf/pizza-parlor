@@ -102,7 +102,17 @@ function listPizzaParlor(pizzaParlorToDisplay) {
   pizzaDiv.append(ul);
 }
 
+function displayPizzaDetails(event) {
+  const pizza = pizzaParlor.findId(event.target.id);
+  document.querySelector(".size").innerText = pizza.size;
+  document.querySelector(".meats").innerText = pizza.meatArray;
+  document.querySelector(".vegetables").innerText = pizza.veggieArray;
+  document.querySelector(".price").innerText= pizza.price;
+  document.querySelector("button.delete").setAttribute("id", pizza.id);
+  document.querySelector("div#pizza-details").removeAttribute("class");
+}
 
 window.addEventListener("load", function(){
   document.querySelector("form#user-vegetable-toppings").addEventListener("submit", handleFormSubmission);
+  document.querySelector("div#user-pizzas").addEventListener("click",displayPizzaDetails);
 });
