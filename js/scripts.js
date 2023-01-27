@@ -14,6 +14,14 @@ PizzaParlor.prototype.assignId = function () {
   return this.currentId;
 }
 
+PizzaParlor.prototype.findId = function(id) {
+  if (this.pizzas[id] !== undefined) {
+    return this.contacts[id];
+  }
+  return false;
+}
+
+
 
 let pizzaParlor = new PizzaParlor();
 let emptyPizza = {size:"large", topping1:"mushrooms"}
@@ -21,3 +29,5 @@ pizzaParlor.addPizza(emptyPizza)
 
 
 console.log(pizzaParlor);
+let x = 1 
+pizzaParlor.findId(x);

@@ -69,12 +69,20 @@ Test: It should iterate the pizzaParlor's Id by 1 and return its current id when
 code : pizzaParlor.addPizza(pizza)
 
 Expected Output : pizzaParlor {
-  
+
   this.pizzas = {1:pizza}
 
   this.currentId = 1;
 
 }
+
+## Describe: PizzaParlor.prototype.findId = function(id);
+
+Test: It should look at a pizza's ID and if it does not return undefined, return it's ID, otherwise return false;
+
+code pizzaParlor.findId(1)
+
+Expected Output : 1 OR false
 
 
 
