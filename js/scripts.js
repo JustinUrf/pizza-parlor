@@ -32,10 +32,30 @@ PizzaParlor.prototype.deleteId = function(id) {
 
 //Bussiness Logic for making Individual Pizzas
 
-function Pizza(size, meatArray, veggieArray) {
+pizzaPrice = function(size, meatArray, veggieArray) {
+  let price = 0;
+
+  if (size === "Small") {
+    price += 3;
+  }
+  else if (size === "Medium") {
+    price += 5;
+  }
+  else if (size === "Large") {
+    price += 7;
+  }
+
+  price += (meatArray.length * 3);
+  price += (veggieArray.length * 2);
+  
+  return "$" + price
+}
+
+function Pizza(size, meatArray, veggieArray, price) {
   this.size = size;
   this.meatArray = meatArray;
   this.veggieArray = veggieArray;
+  this.price = price;
 }
 
 
@@ -44,3 +64,4 @@ let pizzaParlor = new PizzaParlor();
 let pizza = new Pizza("large", ["sausage", "pepperoni", "bacon", "chicken"], ["mushroom"])
 
 console.log(pizza)
+console.log(pizzaPrice("Large", ["sausage", "pepperoni", "bacon", "chicken"], ["mushroom"]))

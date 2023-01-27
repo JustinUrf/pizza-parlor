@@ -80,15 +80,31 @@ Expected Output : pizzaParlor {
 
 Test: It should look at a pizza's ID and if it does not return undefined, return it's ID, otherwise return false;
 
-code pizzaParlor.findId(1)
+Code: pizzaParlor.findId(1)
 
 Expected Output : 1 OR false
 
+## Describe: PizzaParlor.prototype.deleteId = function(id);
 
+Test: It should look at a pizza's ID and if it returns an ID, delete the ID, if it is undefined, just return false.
 
+Code: pizzaParlor.deleteId(1)
 
+Expected Output : pizzaParlor's id 1 gets deleted or returns false.
 
+## Describe : function Pizza(size, meatArray, veggieArray) {}
 
+Test: It is a constructor that should construct an object based off 3 paramters, the size, a meatArray, and a veggieArray.
 
+Code: let pizza = new Pizza(newSize, newMeatArray, newVeggieArray)
 
+Expected output : new Pizza will an object that has those 3 elements.
 
+## Describe : function pizzaPrice(size, meatArray, veggieArray) {}
+
+Test: It should return a price amount based off the amounts of topping you choose for your pizza and its size.
+
+Code: pizzaPrice("Large", ["sausage", "pepperoni", "bacon", "chicken"], ["mushroom"]);
+
+Expected output : 21, As large is 7$, there are 4 meat toppings (4x3)
+and one veggie topping (1x2);
