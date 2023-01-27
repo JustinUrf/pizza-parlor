@@ -20,6 +20,14 @@ PizzaParlor.prototype.findId = function(id) {
   }
   return false;
 }
+PizzaParlor.prototype.deleteId = function(id) {
+  if (this.pizzas[id] === undefined) {
+    return false;
+  }
+  delete this.pizzas[id];
+  return true;
+}
+
 
 
 
@@ -27,7 +35,5 @@ let pizzaParlor = new PizzaParlor();
 let emptyPizza = {size:"large", topping1:"mushrooms"}
 pizzaParlor.addPizza(emptyPizza)
 
-
+pizzaParlor.deleteId(1)
 console.log(pizzaParlor);
-let x = 1 
-pizzaParlor.findId(x);
