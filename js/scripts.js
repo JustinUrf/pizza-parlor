@@ -62,19 +62,31 @@ function Pizza(size, meatArray, veggieArray, price) {
   this.price = price;
 };
 // User Interface Logic
+let pizzaParlor = new PizzaParlor();
 function handleFormSubmission(event) {
   event.preventDefault();
   let meatArray = [];
   let veggieArray = [];
   const size = document.getElementById("pizza-size-id").value;
-  console.log(size)
   const meatToppings = document.getElementsByClassName("meat-toppings");
   for (i = 0; i < meatToppings.length; i++) {
-    console.log(meatToppings[i]);
-    meatArray += meatToppings[i].value;
+    if (meatToppings[i].value !== "null") {
+    meatArray.push(meatToppings[i].value);
+    };
   };
-  console.log(meatArray);
+
+  const vegetableToppings = document.getElementsByClassName("vegetable-toppings");
+  for (i = 0; i < vegetableToppings.length; i++) {
+    if (vegetableToppings[i].value !== "null") {
+      veggieArray.push(vegetableToppings[i].value);
+    };
+  };
+  const price = pizzaPrice(size, meatArray, veggieArray)
+  let newPizza = new Pizza(size, meatArray, veggieArray, price);
+
+  pizzaParlor.addPizza(newPizza);
 }
+
 
 window.addEventListener("load", function(){
   document.querySelector("form#user-vegetable-toppings").addEventListener("submit", handleFormSubmission);
