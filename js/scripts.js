@@ -61,12 +61,11 @@ function Pizza(size, meatArray, veggieArray, price) {
   this.veggieArray = veggieArray;
   this.price = price;
 };
+// User Interface Logic
+function handleFormSubmission(event) {
+  event.preventDefault();
+}
 
-// let pizzaParlor = new PizzaParlor();
-
-// let pizza = new Pizza("Large", ["sausage", "pepperoni", "bacon", "chicken"], ["mushroom"])
-
-// console.log(pizza)
-// console.log(pizzaPrice("Large", ["sausage", "pepperoni", "bacon", "chicken"], ["mushroom"]))
-
-// console.log(pizza.pizzaInfo());
+window.addEventListener("load", function(){
+  document.querySelector("form#user-vegetable-toppings").addEventListener("submit", handleFormSubmission);
+});
