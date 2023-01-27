@@ -1,29 +1,24 @@
-# {Application Name}
+# Pizza Parlor
 
-#### By {List of contributors}
+#### By Justin Lee
 
-#### {Brief description of application}
+#### Website takes in user input to construct them a personal pizza with different toppings and different sizes which then returns a dollar amount based off user selection
 
 ## Technologies Used
 
-* List all
-* the major technologies
-* you used in your project
-* here
+* JavaScript
+* HTML
+* CSS
 
 ## Description
 
-{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}
+Website first takes in user input through different selection bars. It then returns the users pizza and a cost. Users may click on their pizza to see additional details, its toppings and its cost. This is done by using constructors, objects, and prototypes to handle input data that returns a personalized pizza that has a dynamic cost.
 
 ## Setup/Installation Requirements
 
-* This is a great place
-* to list setup instructions
-* in a simple
-* easy-to-understand
-* format
+* Push repository to personal PC through gitbash or downloading the repository on github.
+* To run website, open HTML file in any browser that supports 
 
-{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}
 
 ## Known Bugs
 
