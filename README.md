@@ -17,16 +17,29 @@ Website first takes in user input through different selection bars. It then retu
 ## Setup/Installation Requirements
 
 * Push repository to personal PC through gitbash or downloading the repository on github.
-* To run website, open HTML file in any browser that supports 
+* To run website, open HTML file in any browser that supports HTML files.
+* Input any sized pizza and toppings to see your pizza and how much it cost!
+* To see any JavaScript, CSS, or HTML file source code, use any open source code editor such as VSCode.
 
 
 ## Known Bugs
 
-* Any known issues
-* should go here
+N/a
 
 ## License
 
-{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}
+MIT
 
-Copyright (c) date author name(s)
+Copyright (c) 01/27/23
+
+## Test Driven Development
+
+Describe: function PizzaParlor() {}
+Test: It is a constructor that should contain a Pizzas{} as an object and a currentId counter that increments with the passing of more pizza's.
+Code : pizzaParlor = new PizzaParlor();
+console.log(pizzaParlor);
+console.log(pizzaParlor.currentId)
+Expected Output : >pizzaParlor {
+  this.pizzas = {}
+  this.currentId = 0;
+}
