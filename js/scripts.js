@@ -112,7 +112,15 @@ function displayPizzaDetails(event) {
   document.querySelector("div#pizza-details").removeAttribute("class");
 }
 
+function handleDelete(event) {
+  pizzaParlor.deleteId(event.target.id);
+  document.querySelector("button.delete").removeAttribute("id");
+  document.querySelector("div#pizza-details").setAttribute("class","hidden");
+  listPizzaParlor(pizzaParlor);
+}
+
 window.addEventListener("load", function(){
   document.querySelector("form#user-vegetable-toppings").addEventListener("submit", handleFormSubmission);
   document.querySelector("div#user-pizzas").addEventListener("click",displayPizzaDetails);
+  document.querySelector("button.delete").addEventListener("click", handleDelete);
 });
