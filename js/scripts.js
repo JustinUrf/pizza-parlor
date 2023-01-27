@@ -17,7 +17,7 @@ PizzaParlor.prototype.assignId = function () {
 
 PizzaParlor.prototype.findId = function(id) {
   if (this.pizzas[id] !== undefined) {
-    return this.contacts[id];
+    return this.pizzas[id];
   }
   return false;
 };
@@ -85,6 +85,21 @@ function handleFormSubmission(event) {
   let newPizza = new Pizza(size, meatArray, veggieArray, price);
 
   pizzaParlor.addPizza(newPizza);
+  listPizzaParlor(pizzaParlor);
+};
+
+function listPizzaParlor(pizzaParlorToDisplay) {
+  let pizzaDiv = document.querySelector("div#user-pizzas");
+  pizzaDiv.innerText = null;
+  const ul = document.createElement("u");
+  Object.keys(pizzaParlorToDisplay.pizzas).forEach(function(key) {
+    const pizza = pizzaParlorToDisplay.findId(key);
+    const li = document.createElement("li");
+    li.append(pizza.pizzaInfo());
+    li.setAttribute("id", pizza.id);
+    ul.append(li);
+  });
+  pizzaDiv.append(ul);
 }
 
 
