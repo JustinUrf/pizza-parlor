@@ -4,7 +4,8 @@ function PizzaParlor() {
 };
 
 PizzaParlor.prototype.addPizza = function(pizza) {
-  this.pizzas = pizza
+  pizza.id = this.assignId();
+  this.pizzas[pizza.id] = pizza;
 };
 
 
@@ -15,7 +16,7 @@ PizzaParlor.prototype.assignId = function () {
 
 
 let pizzaParlor = new PizzaParlor();
-let emptyPizza = "nothing"
+let emptyPizza = {size:"large", topping1:"mushrooms"}
 pizzaParlor.addPizza(emptyPizza)
 
 

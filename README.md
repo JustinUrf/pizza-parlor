@@ -64,11 +64,18 @@ Expected Output: > pizzaParlor {
 
 ## Describe: PizzaParlor.prototype.assignId, function();
 
-Test: It should iterate the pizzaParlor's Id by 1 and return its current id.
+Test: It should iterate the pizzaParlor's Id by 1 and return its current id when called by the function addPizza
 
-code : Address
+code : pizzaParlor.addPizza(pizza)
 
-Expected Output : 1,
+Expected Output : pizzaParlor {
+  
+  this.pizzas = {1:pizza}
+
+  this.currentId = 1;
+
+}
+
 
 
 
