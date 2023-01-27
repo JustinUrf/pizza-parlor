@@ -9,6 +9,7 @@
   <h1>Welcome to Analog's Pizza Parlor</h1>
   <h2>What would you like?</h2>
   <div>
+    
     <form id="user-pizza-size">
       <p>What size of pizza would you like?</p>
       <select id="pizza-size-id">
@@ -16,9 +17,8 @@
         <option value="Medium">Medium, $5</option>
         <option value="Large">Large, $7</option>
       </select>
+      <br><br>
     </form>
-    <br>
-    <br>
 
     <form id="user-meat-topping">
       <p>What kinds of meat toppings would you like? $3 each.</p>
@@ -91,6 +91,19 @@
       </select> <br>
 
     </form>
+
+    <h2>Your Pizza's</h2>
+    <div id="user-pizzas">
+    </div>
+
+    <div id="pizza-details" class ="hidden">
+      <h2>This Pizza's Details</h2>
+      <p>Size : <span class="size"></span>.</p>
+      <p>Meat Toppings : <span class="meats"></span>.</p>
+      <p>Vegetables : <span class="vegetables"></span>.</p>
+      <p>Price : <span class="price"></span>.</p>
+
+    </div>
 
 
   </div>
