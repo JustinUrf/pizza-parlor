@@ -64,6 +64,16 @@ function Pizza(size, meatArray, veggieArray, price) {
 // User Interface Logic
 function handleFormSubmission(event) {
   event.preventDefault();
+  let meatArray = [];
+  let veggieArray = [];
+  const size = document.getElementById("pizza-size-id").value;
+  console.log(size)
+  const meatToppings = document.getElementsByClassName("meat-toppings");
+  for (i = 0; i < meatToppings.length; i++) {
+    console.log(meatToppings[i]);
+    meatArray += meatToppings[i].value;
+  };
+  console.log(meatArray);
 }
 
 window.addEventListener("load", function(){
