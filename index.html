@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang = "en-US">
 <head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <script src="js/scripts.js"></script>
   <title>Pizza Parlor</title>
 </head>
-<body>
-  <h1>Welcome to Analog's Pizza Parlor</h1>
-  <h2>What would you like?</h2>
-  <div>
+<body class="text-white bg-dark">
+  <div class ="container">
+    <h1>Welcome to Analog's Pizza Parlor</h1>
+    <h2>What would you like?</h2>
     
     <form id="user-pizza-size">
       <p>What size of pizza would you like?</p>
@@ -24,34 +25,34 @@
       <p>What kinds of meat toppings would you like? $3 each.</p>
       <select class="meat-toppings">
         <option value="null"></option>
-        <option value="Pepperoni">Pepperoni</option>
-        <option value="Sausage">Sausage</option>
-        <option value="Bacon">Bacon</option>
-        <option value="BBQ Chicken">BBQ Chicken</option>
+        <option value=" Pepperoni">Pepperoni</option>
+        <option value=" Sausage">Sausage</option>
+        <option value=" Bacon">Bacon</option>
+        <option value=" BBQ Chicken">BBQ Chicken</option>
       </select> <br>
 
       <select class="meat-toppings">
         <option value="null"></option>
-        <option value="Pepperoni">Pepperoni</option>
-        <option value="Sausage">Sausage</option>
-        <option value="Bacon">Bacon</option>
-        <option value="BBQ Chicken">BBQ Chicken</option>
+        <option value=" Pepperoni">Pepperoni</option>
+        <option value=" Sausage">Sausage</option>
+        <option value=" Bacon">Bacon</option>
+        <option value=" BBQ Chicken">BBQ Chicken</option>
       </select> <br>
 
       <select class="meat-toppings">
         <option value="null"></option>
-        <option value="Pepperoni">Pepperoni</option>
-        <option value="Sausage">Sausage</option>
-        <option value="Bacon">Bacon</option>
-        <option value="BBQ Chicken">BBQ Chicken</option>
+        <option value=" Pepperoni ">Pepperoni</option>
+        <option value=" Sausage ">Sausage</option>
+        <option value=" Bacon ">Bacon</option>
+        <option value=" BBQ Chicken ">BBQ Chicken</option>
       </select> <br>
 
       <select class="meat-toppings">
         <option value="null"></option>
-        <option value="Pepperoni">Pepperoni</option>
-        <option value="Sausage">Sausage</option>
-        <option value="Bacon">Bacon</option>
-        <option value="BBQ Chicken">BBQ Chicken</option>
+        <option value=" Pepperoni">Pepperoni</option>
+        <option value=" Sausage">Sausage</option>
+        <option value=" Bacon">Bacon</option>
+        <option value=" BBQ Chicken">BBQ Chicken</option>
       </select> <br>
 
     </form>
@@ -60,49 +61,49 @@
       <p>What kinds of vegetable toppings would you like? $2 each.</p>
       <select class="vegetable-toppings">
         <option value="null"></option>
-        <option value="Mushrooms">Mushrooms</option>
-        <option value="Bellpeppers">Bellpeppers</option>
-        <option value="Artichokes">Artichokes</option>
-        <option value="Olives">Olives</option>
+        <option value=" Mushrooms">Mushrooms</option>
+        <option value=" Bellpeppers">Bellpeppers</option>
+        <option value=" Artichokes">Artichokes</option>
+        <option value=" Olives">Olives</option>
       </select> <br>
 
       <select class="vegetable-toppings">
         <option value="null"></option>
-        <option value="Mushrooms">Mushrooms</option>
-        <option value="Bellpeppers">Bellpeppers</option>
-        <option value="Artichokes">Artichokes</option>
-        <option value="Olives">Olives</option>
+        <option value=" Mushrooms">Mushrooms</option>
+        <option value=" Bellpeppers">Bellpeppers</option>
+        <option value=" Artichokes">Artichokes</option>
+        <option value=" Olives">Olives</option>
       </select> <br>
 
       <select class="vegetable-toppings">
         <option value="null"></option>
-        <option value="Mushrooms">Mushrooms</option>
-        <option value="Bellpeppers">Bellpeppers</option>
-        <option value="Artichokes">Artichokes</option>
-        <option value="Olives">Olives</option>
+        <option value=" Mushrooms">Mushrooms</option>
+        <option value=" Bellpeppers">Bellpeppers</option>
+        <option value=" Artichokes">Artichokes</option>
+        <option value=" Olives">Olives</option>
       </select> <br>
 
       <select class="vegetable-toppings">
         <option value="null"></option>
-        <option value="Mushrooms">Mushrooms</option>
-        <option value="Bellpeppers">Bellpeppers</option>
-        <option value="Artichokes">Artichokes</option>
-        <option value="Olives">Olives</option>
-      </select> <br>
+        <option value=" Mushrooms">Mushrooms</option>
+        <option value=" Bellpeppers">Bellpeppers</option>
+        <option value=" Artichokes">Artichokes</option>
+        <option value=" Olives">Olives</option>
+      </select> <br><br><br>
 
-      <button type="submit">Add Pizza To Cart</button>
+      <button type="submit">Add Pizza To Cart</button> <br><br><br>
     </form>
 
-    <h2>Your Pizza's</h2>
+    <h2>Your Pizzas</h2>
     <div id="user-pizzas">
-    </div>
+    </div><br><br><br>
 
-    <div id="pizza-details" class ="hidden">
-      <h2>This Pizza's Details</h2>
-      <p>Size : <span class="size"></span>.</p>
-      <p>Meat Toppings : <span class="meats"></span>.</p>
-      <p>Vegetables : <span class="vegetables"></span>.</p>
-      <p>Price : <span class="price"></span>.</p>
+    <div id="pizza-details" class ="d-none">
+      <h2>This Pizzas Details</h2>
+      <p>Size : <span class="size"></span></p>
+      <p>Meat Toppings : <span class="meats"></span></p>
+      <p>Vegetables : <span class="vegetables"></span></p>
+      <p>Price : <span class="price"></span></p>
       <button class="delete" type="button">Remove From Cart?</button>
 
     </div>

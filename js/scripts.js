@@ -107,7 +107,7 @@ function displayPizzaDetails(event) {
   document.querySelector(".size").innerText = pizza.size;
   document.querySelector(".meats").innerText = pizza.meatArray;
   document.querySelector(".vegetables").innerText = pizza.veggieArray;
-  document.querySelector(".price").innerText= pizza.price;
+  document.querySelector(".price").innerText = pizza.price;
   document.querySelector("button.delete").setAttribute("id", pizza.id);
   document.querySelector("div#pizza-details").removeAttribute("class");
 }
@@ -115,7 +115,7 @@ function displayPizzaDetails(event) {
 function handleDelete(event) {
   pizzaParlor.deleteId(event.target.id);
   document.querySelector("button.delete").removeAttribute("id");
-  document.querySelector("div#pizza-details").setAttribute("class","hidden");
+  document.querySelector("div#pizza-details").setAttribute("class","d-none");
   listPizzaParlor(pizzaParlor);
 }
 
