@@ -81,7 +81,8 @@ function handleFormSubmission(event) {
       veggieArray.push(vegetableToppings[i].value);
     };
   };
-  const price = pizzaPrice(size, meatArray, veggieArray)
+
+  const price = pizzaPrice(size, meatArray, veggieArray);
   let newPizza = new Pizza(size, meatArray, veggieArray, price);
 
   pizzaParlor.addPizza(newPizza);
@@ -119,7 +120,7 @@ function handleDelete(event) {
   listPizzaParlor(pizzaParlor);
 }
 
-window.addEventListener("load", function(){
+window.addEventListener("load", function() {
   document.querySelector("form#user-vegetable-toppings").addEventListener("submit", handleFormSubmission);
   document.querySelector("div#user-pizzas").addEventListener("click",displayPizzaDetails);
   document.querySelector("button.delete").addEventListener("click", handleDelete);
