@@ -71,7 +71,7 @@ function handleFormSubmission(event) {
   const meatToppings = document.getElementsByClassName("meat-toppings");
   for (i = 0; i < meatToppings.length; i++) {
     if (meatToppings[i].value !== "null") {
-    meatArray.push(meatToppings[i].value);
+        meatArray.push(meatToppings[i].value);
     };
   };
 
